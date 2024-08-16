@@ -1,0 +1,15 @@
+{
+  "name": "3d_ray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.7",
+    "typescript": "^5.5.4"
+  }
+}

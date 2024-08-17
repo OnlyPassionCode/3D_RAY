@@ -74,6 +74,24 @@ function hittingCell(p1: Vector2, p2: Vector2): Vector2{
 }
 
 function rayStep(p1: Vector2, p2: Vector2): Vector2{
+    /**
+     * p1 = (x1, y1)
+     * p2 = (x2, y2)
+     * 
+     * y1 = k * x1 + c
+     * y2 = k * x2 + c
+     * 
+     * c = y1 - k * x1
+     * 
+     * y2 = k * x2 + y1 - k * x1
+     * y2 = k*(x2 - x1) + y1
+     * y2 - y1 = k*(x2-x1)
+     * k = (y2 - y1) / (x2 - x1)
+     * 
+     * dy = y2 - y1
+     * dx = x2 - x1
+     * k = dy / dx
+     */
     const d = p2.sub(p1);
     let p3 = p2;
     if(d.x !== 0){
